@@ -1,0 +1,12 @@
+{% load static %}
+<html>
+<head>
+    <title>Form</title>
+</head>
+<body>
+<form action="{% url 'form' %}">
+    {% csrf_token %}
+    <button type="submit">Form</button>
+</form>
+</body>
+</html>
